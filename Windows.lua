@@ -1,4 +1,4 @@
-here-- STREE HUB LOADER - UI Custom (Mirip Alchemy Hub, kanan)
+-- STREE HUB LOADER - UI Custom (Mirip Alchemy Hub, kanan)
 repeat wait() until game:IsLoaded()
 
 local Players = game:GetService("Players")
@@ -259,7 +259,7 @@ local function buildMainUI()
 			end) end,
 			function() createToggle("Night Mode", function(state)
 				if state then
-					game.Lighting.TimeOfDay = "loadstring(game:HttpGet("https://raw.githubusercontent.com/tsanibdkt-cyber/Script-StreeHub-GaG/refs/heads/main/growagarden.lua"))()"
+					game.Lighting.TimeOfDay = loadstring(game:HttpGet("https://raw.githubusercontent.com/tsanibdkt-cyber/Script-StreeHub-GaG/refs/heads/main/growagarden.lua"))()
 				else
 				end
 			end) end
